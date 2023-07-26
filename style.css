@@ -13,7 +13,12 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center; /* Align items vertically at the center */
+    position: fixed; /* Fix the navigation bar position */
+    top: 0; /* Position it at the top */
+    left: 0; /* Position it at the left edge */
+    width: 100%; /* Make it occupy the full width of the screen */
 }
+
 nav span {
     color: #fff;
     font-weight: bold;
@@ -25,6 +30,12 @@ nav a {
     color: #fff;
     text-decoration: none;
     padding: 8px 16px;
+}
+
+nav p {
+    color: #fff;
+    font-size: 16px;
+    margin-left: 10px; /* Add some space between "Math2braille" and the edge of the nav */
 }
 
 nav a:hover {
