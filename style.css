@@ -1,0 +1,26 @@
+/* Add your CSS styles here */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+/* Style for the navigation bar */
+nav {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style for the navigation links */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
