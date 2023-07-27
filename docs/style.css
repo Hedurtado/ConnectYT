@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+/* Style for the navigation bar */
+nav {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically at the center */
+    position: fixed; /* Fix the navigation bar position */
+    top: 0; /* Position it at the top */
+    left: 0; /* Position it at the left edge */
+    width: 100%; /* Make it occupy the full width of the screen */
+}
+
+/* Style for the "ConnectYT" text on the left */
+.left-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.left-content span {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* Style for "Math2braille" text below "ConnectYT" */
+.left-content p {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 5px; /* Add some space between "ConnectYT" and "Math2braille" */
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    flex-grow: 1; 
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+    transform: scale(0.9);
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.content {
+    margin-top: 50px; /* Add margin to create space below the nav */
+    padding: 20px; /* Add some padding to the content */
+}
