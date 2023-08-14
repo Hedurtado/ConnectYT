@@ -3,37 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <title>Repository Name</title>
-    <!-- Replace 'Repository Name' with the actual name of your repository -->
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <nav>
-        <div class="left-content">
-            <span>ConnectYT</span>
-            <p>Math2braille</p>
+        <div class="logo">
+            <img src="connectyt.png" alt="Logo de la página">
         </div>
-        <!-- Replace '#' with the actual URLs or relative paths for your repository sections -->
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <div class="logo1">
+            <img src="logo-footer.png" alt="yt">
+        </div>
+        <div class="navbar">
+            <a class="active" href="#"> Home</a>
+            <a href="#">About us</a>
+            <a href="#">Repository</a>
+            <a href="#">Contact us</a>
+        </div>
     </nav>
+    <!-- Side navigation -->
+    <div class="sidenav">
+        <div class="title">NOTES</div>
+        <a href="#">Linear Algebra</a>
+        <a href="#">Diferencial Calculus</a>
+        <a href="#">Integral Calculus</a>
+        <a href="#">ODE</a>
+        <a href="#">Probability</a>
+        <a href="#">Stadistics</a>
+    </div>
 
-    <h1>Repository Name</h1>
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+    <div id="id01" class="modal">
+  
+    <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="img_avatar2.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        
+        <button type="submit">Login</button>
+        <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+    </form>
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    
+    <h1>Math2braille</h1>
+    
     <div class="repository-info">
-        <strong>Owner:</strong> Your Name<br>
-        <!-- Replace 'Your Name' with the owner's name -->
-        <strong>Created:</strong> YYYY-MM-DD<br>
-        <!-- Replace 'YYYY-MM-DD' with the creation date of the repository -->
-        <strong>URL:</strong> <a href="#">Link to Repository</a><br>
-        <!-- Replace '#' with the actual URL of your repository -->
+        <strong>Translate to Braille</strong><br>
+        <form class="example" action="#" style="margin:auto;max-width:300px">
+            <input type="text" placeholder="Write your equation" name="search2">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
     </div>
     <div class="repository-description">
         <!-- Replace this text with a brief description of your repository -->
-        This repository contains my project files for XYZ.
+        Elevate your learning, dot by dot: ConnectYT
     </div>
     <!-- Add any other content related to your repository below -->
-
+    
 </body>
 </html>

@@ -1,59 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Exo 2', sans-serif;
     line-height: 1.6;
-    margin: 20px;
-}
-
-/* Style for the navigation bar */
-nav {
-    background-color: #333;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Align items vertically at the center */
-    position: fixed; /* Fix the navigation bar position */
-    top: 0; /* Position it at the top */
-    left: 0; /* Position it at the left edge */
-    width: 100%; /* Make it occupy the full width of the screen */
-}
-
-/* Style for the "ConnectYT" text on the left */
-.left-content {
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-}
-
-.left-content span {
-    color: #fff;
-    font-weight: bold;
-    font-size: 20px;
-    margin-right: 10px;
-}
-
-/* Style for "Math2braille" text below "ConnectYT" */
-.left-content p {
-    color: #fff;
-    font-size: 16px;
-    margin-top: 5px; /* Add some space between "ConnectYT" and "Math2braille" */
-}
-nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 8px 16px;
-    flex-grow: 1; 
-    text-align: center;
-    transition: transform 0.3s;
-}
-
-nav a:hover {
-    background-color: #555;
-    transform: scale(0.9);
-    padding: 8px 12px;
-    font-size: 14px;
+    
 }
 
 .content {
     margin-top: 50px; /* Add margin to create space below the nav */
     padding: 20px; /* Add some padding to the content */
 }
+
+.repository-info {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    position: relative; /* Agregamos posicionamiento relativo */
+    top: 80px; /* Ajustamos la posición hacia arriba */
+    z-index: 0;
+    font-size: 25px;
+}
+.repository-description{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    position: relative; /* Agregamos posicionamiento relativo */
+    top: 80px; /* Ajustamos la posición hacia arriba */
+    z-index: 0;
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+}
+nav {
+    background-color: #90E0EF;
+    background-image: linear-gradient(to right, rgb(255, 255, 255,1) , #90E0EF);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Estilo para el logo en la parte izquierda */
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo1{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0px;
+    width: 180px;
+  
+}
+
+.logo1 img{
+    width: 140px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Estilo para los enlaces de navegación */
+.navbar {
+    display: flex;
+    overflow: auto;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar a {
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 12px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a.active {
+    font-weight: bold;
+
+}
+
+.navbar a:hover {
+    background-color: #48CAE4;
+    color: #ffffff;
+}
+
+/* Añade un margen izquierdo a los enlaces para separarlos del logo */
+.navbar a:not(:first-child) {
+    margin-left: 20px;
+}
+h1{
+    padding-left: 200px;
+    font-family: 'Exo 2', sans-serif;
+}
+.sidenav {
+    width: 170px;
+    position: fixed;
+    z-index: 0;
+    top: 100px;
+    left: 10px;
+    background: #ffffff;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255,1) , #90E0EF);
+    overflow-x: hidden;
+    padding: 8px 0;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    background-color: #48CAE4;
+    color: #ffffff;
+  }
+
+  .sidenav a.active{
+    font-weight: bold;
+  }
+
+  .title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 6px 8px 6px 16px;
+    font-size: 20px;
+}
+  
+  .main {
+    margin-left: 140px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+
+  .uname, input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #000000;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    float: right;
+    margin-right:15px;
+    border-radius: 25px;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+    float: left;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 20%;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 20px 20px 66px;
+
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: none;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  form.example button {
+    float: right;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
